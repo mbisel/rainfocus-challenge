@@ -1,0 +1,90 @@
+@import './styles/variables';
+
+html, body {width: auto!important; overflow-x: hidden!important} 
+
+.content{
+  display: flex;
+  
+}
+
+.attendees{
+    width: 95vw;
+    margin: 30px;
+}
+
+.attendees p{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.heading {
+    display:flex;
+    height: 30px;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.heading h1 {
+    font-size: 20px;
+    margin:0;
+}
+
+
+
+.card {
+    border: $grayBorder;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 5px;
+    max-width: 270px;
+
+}
+
+.card img {
+    height: 1em;
+}
+
+.card .heading {
+    margin:0;
+}
+
+.card .heading h1 {
+    font-size: 12px;
+    margin: 0;
+}
+
+.card  p {
+    font-size: 10px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.base .card{
+    border:none;
+}
+
+.step1 {
+    border: $grayBorder;
+    border-radius: 5px;
+    max-width: fit-content;
+}
+
+.centered {
+    text-align: center;
+}
+
+.centered .heading {
+    display: block;
+}
+
+@media screen and (max-width: 500px) {
+    .steps{
+        display: block;
+    }
+    
+  }

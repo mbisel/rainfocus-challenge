@@ -1,0 +1,65 @@
+@import './variables';
+
+.header {
+    border-bottom: $grayBorder;
+    padding: 10px;
+}
+
+.header img {
+    width: 5em;
+}
+
+.title-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 100%;
+
+}
+
+h1,
+h2,
+p {
+    font-family: $inter;
+}
+
+.header h1 {
+    font-weight: 600;
+    font-size: 32px;
+    margin: 0;
+}
+
+.header h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 0.5em;
+
+}
+
+.header p {
+    font-weight: 400;
+    margin: 0;
+}
+
+
+.edit {
+    margin: 5px;
+    margin-left: auto;
+    font-family: $inter;
+    font-weight: 600;
+    background-color: #5C00DC;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 7px 15px 7px 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .title-banner {
+        display: block;
+    }
+
+}
